@@ -1,0 +1,74 @@
+.footer-item1 {
+    background-image: url("https://www.luchalibretacoshop.com/wp-content/uploads/2017/10/footer-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+.footer-item2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid #f191ba;
+    padding: 60px;
+    position: relative;
+}
+.local {
+    display: flex;
+    flex-direction: column;
+    max-width: 35ch;
+}
+
+.footer-item2 img {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+}
+
+.local span:nth-child(1) {
+    color: #f191ba;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.local span:not(:first-child) {
+    color: #8f8f8f;
+    font-size: 20px;
+    max-width: 165px;
+}
+
+.footer-item3 {
+    padding: 20px;
+}
+
+.footer-item3 div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-item3 i {
+    font-size: 20px;
+    color:#f191ba;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-item3 p {
+    color: #8f8f8f;
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-item3 i:hover {
+    color: #e6629b;
+}
+
+@media (max-width: 950px) {
+    .footer-item2 img {
+        display: none;
+    }
+}

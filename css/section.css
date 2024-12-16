@@ -1,0 +1,245 @@
+.comidas {
+    background-image: url("https://www.luchalibretacoshop.com/wp-content/uploads/2017/10/pink-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.comidas h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.comidas h2 {
+    color: white;
+    text-align: center;
+}
+
+.comidas-item {
+    padding: 10px;
+    max-width: 900px;
+    display: flex;
+    gap: 10px;
+    margin: 40px auto;
+}
+
+.comidas-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.comidas-container img {
+    border-radius: 8px;
+}
+
+.comidas-container span {
+    font-weight: bold;
+}
+
+.comidas-descricao {
+    margin-top: 10px;
+    color: #f191ba;
+    font-size: 15px;
+}
+
+.comidas-nome {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.comidas-container:hover {
+    opacity: 1;
+    transform: translate(0, -10px);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+}
+
+.reservas {
+    z-index: 0;
+    color: white;
+    background-image: url("https://www.luchalibretacoshop.com/wp-content/uploads/2023/01/lucha_booth_upscaled-scaled.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 800px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.gradiente {
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, hsla(0, 2%, 57%, 0.418), rgba(0, 0, 0, 0.747));
+}
+
+.reservas h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.reservas h2 {
+    text-align: center;
+}
+
+.reservas-flex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.reservas-button1 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #f191ba;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.3s;
+    font-weight: 700;
+    text-align: center;
+    max-width: 250px;
+    flex:1;
+}
+
+.reservas-button2 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #8ed1fc;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.3s;
+    font-weight: 700;
+    text-align: center;
+    max-width: 250px;
+    flex:1;
+}
+
+.reservas-button1:hover {
+    background-color: white;
+    color:#f191ba; 
+} 
+
+.reservas-button2:hover {
+    background-color: white;
+    color: #8ed1fc;
+} 
+
+.videos-item {
+    padding: 10px;
+    max-width: 900px;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(3,1fr);
+    margin: 40px auto;
+}
+
+.videos-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 300px; 
+    height: 337px;
+    
+}
+
+.videos {
+    background-image: url("https://www.luchalibretacoshop.com/wp-content/uploads/2017/10/pink-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.videos h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.videos h2 {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.videos h2:hover {
+    color:black;
+}
+
+.videos-item div {
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.videos-item div span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    text-align: center;
+}
+
+.videos-item i {
+    color: white;
+    font-size: 45px;
+    flex: 1;
+    
+}
+
+.videos-item div:hover {
+    opacity: 0.5;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .videos-item {
+        padding: 10px;
+        max-width: 900px;
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: repeat(2,1fr);
+        margin: 40px auto;
+    }
+
+    .reservas-flex {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .comidas-item {
+        flex-direction: column;
+    }
+}

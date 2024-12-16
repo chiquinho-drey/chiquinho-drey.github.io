@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Tacos, burritos, nachos, breakfast, brunch & more Mission Hills | North Park | PB Lucha Libre, packed with legendary flavors all day!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lucha Libre Taco Shop</title>
+</head>
+
+<body>
+
+    <div style="cursor: pointer;" class="toggle-element" style="opacity: 0.8; position: fixed; top:0px; left:0px;">
+        <p style="color: rgb(255, 0, 0);">este projeto é uma tentativa de replicar o design desse site:
+        </p>
+        <a style="color:blueviolet;" href="https://www.luchalibretacoshop.com/">aqui o site</a>
+        <p style="color: rgb(255, 0, 0);">entao todos os direitos reservados para essa rapaziada ai ta? tentei replicar para fins didáticos!!</p>
+    </div>
+
+    <script>
+        const element = document.querySelector('.toggle-element');
+
+        element.addEventListener('click', function() {
+            if (element.style.display === 'none') {
+                element.style.display = 'block'; 
+            } else {
+                element.style.display = 'none';
+            }
+        });
+    </script>
+
+
+    <header class="header">
+        <img width="165" height="66.16"
+            src="https://www.luchalibretacoshop.com/wp-content/uploads/2024/05/lucha-libre-taco-shop-logo.png"
+            alt="lucha-libre-taco-shop-logo">
+        <nav>
+            <ul class="header-item">
+                <li><a href="#">menu</a></li>
+                <li><a href="#">locations</a></li>
+                <li><a href="#">gift cards</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">lucha gear</a></li>
+                <li><a class="header-button" href="#">order online</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    <aside class="book-now">
+        <p>Eat like a champ at the golden booth. Don't waste time! <span>Book Now</span></p>
+    </aside>
+    <main class="welcome">
+        <h1>Welcome to Lucha Libre Taco Shop</h1>
+        <h2>The taco shop your parents warned you about</h2>
+        <div class="welcome-flex">
+            <a class="welcome-button1" href="#">order online</a>
+            <a class="welcome-button2" href="#">explore catering</a>
+        </div>
+    </main>
+    <div class="imagem-decoracao">
+        <div class="transparencia">
+
+        </div>
+    </div>
+
+    <aside class="patrocinadores">
+        <div class="patrocinadores-grid">
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2022/04/travel-channel-logo.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2022/04/food-channel-logo.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2022/04/SD-union-tribune-logo.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2024/03/michelin-plate-logo.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2022/04/cooking-channel-logo.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2022/04/nyt-logo-stacked.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2022/04/CNN-logo.png" alt="">
+            </div>
+        </div>
+    </aside>
+
+    <section class="comidas">
+        <h1>Lucha Faves</h1>
+        <h2>We try not to have favorites but we just can't help it!</h2>
+        <div class="comidas-item">
+            <div class="comidas-container">
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2024/03/fave-adohaba-pina.jpg" alt="">
+                <span class="comidas-descricao">Heavenly Sweet</span>
+                <span class="comidas-nome">Adohaba Cali</span>
+            </div>
+            <div class="comidas-container">
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2024/03/fave-steak-queso-taco-.jpg"
+                    alt="">
+                <span class="comidas-descricao">Crispy Delicious</span>
+                <span class="comidas-nome">Queso Taco</span>
+            </div>
+            <div class="comidas-container">
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2024/03/fave-surfin-cali-burrito.jpg"
+                    alt="">
+                <span class="comidas-descricao">Out of This World</span>
+                <span class="comidas-nome">Surfin' Cali</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservas">
+        <div class="gradiente">
+        </div>
+        <h1>Do you wanna be a champ?</h1>
+        <h2>Reserve the champions booth for the ultimate golden experience</h2>
+        <div class="reservas-flex">
+            <a class="reservas-button1" href="#">book at mission hills</a>
+            <a class="reservas-button2" href="#">book at north park</a>
+        </div>
+    </section>
+
+    <section class="videos">
+        <h1>Follow Our Feed</h1>
+        <h2>@luchalibretacoshop</h2>
+        <div class="videos-item">
+            <div>
+                <span><i class="fa-solid fa-play"></i></span>
+                <img src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/469855184_587367783969436_7379848897190588847_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/469237614_553073917606029_1990582960299067722_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/469373885_18475094287054076_8542320408675513064_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/469459831_18475073848054076_1107507386114837902_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/469250615_554305267564136_2247103935827919000_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/469168121_574769435247585_2561989237799736854_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/468807487_18474074134054076_3010376249180182560_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/468971633_18473884474054076_5869201311836475206_nfull.webp"
+                    alt="">
+            </div>
+            <div>
+                <span><i class="fa-solid fa-play"></i></span><img
+                    src="https://www.luchalibretacoshop.com/wp-content/uploads/sb-instagram-feed-images/468977582_558331050500003_2329934887678014042_nfull.webp"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-item1"></div>
+        <div class="footer-item2">
+            <div class="local">
+                <span>Mission Hills</span>
+                <span>1810 W. Washington Street</span>
+                <span>San Diego, CA 92103</span>
+            </div>
+            <div class="local">
+                <span>North Park</span>
+                <span>3016 University Ave</span>
+                <span>San Diego, CA 92104</span>
+            </div>
+            <div class="local">
+                <span>Pacific Beach</span>
+                <span>1037 Garnet Ave</span>
+                <span>San Diego, CA 92109</span>
+            </div>
+            <img src="https://www.luchalibretacoshop.com/wp-content/uploads/2017/10/Ancorman-Website-217x300.png" alt="">
+        </div>
+        <div class="footer-item3">
+            <div>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+
+
+            </div>
+            <p>© 2008 - 2024 Lucha Libre Taco Shop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
