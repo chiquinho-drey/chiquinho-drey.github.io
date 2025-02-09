@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    background-color: #f8f8f8;
+    margin: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    
+    justify-items: center;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px auto;
+    background-color: white;
+    gap: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+p,h1 {
+    padding: 0px;
+    margin: 0px;
+}
+h1 {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #6dabe4;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.already-member {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    padding: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.radio {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.forms-input {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #999;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.forms-input i {
+    font-size: 14px;
+}
+
+.forms-input p {
+    color: #999;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.logins {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.logins i {
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #4493dd;;
+}
+
+.logins i:hover {
+    transform: scale(1.3);
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .botao {
+        display: grid;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .logins {
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+
+    .order {
+        order: 2;
+    }
+}
